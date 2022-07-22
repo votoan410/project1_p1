@@ -1,0 +1,125 @@
+/*default/root values*/
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  --grey: rgba(141, 136, 136, 0.582);
+  --blue: rgb(22, 131, 240);
+  --green: rgb(30, 209, 30);
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* following naming structures are 
+worded in B__E--M format (http://getbem.com/introduction/)
+*/
+
+.blog__container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
+
+.header__subscribe {
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.header__title {
+  text-decoration: underline;
+}
+
+.header__button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.header__search {
+  width: 2rem;
+  color: var(--grey);
+}
+
+.article__section {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.article__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  border: 5px solid rgb(226, 225, 225);
+  padding: 2rem;
+}
+
+.card__tag--blue {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.card__tag--green {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.card__date {
+  color: var(--grey);
+}
+
+.card__continue {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.card__paragraph {
+  padding: 1rem 0;
+}
+
+.card__header {
+  padding-top: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  margin: 2rem 0;
+  background-color: rgba(240, 235, 235, 0.308);
+  border: 2px solid lightgrey;
+}
+
+.footer__info {
+  color: var(--grey);
+}
+
+.footer__info--link {
+  text-decoration: underline;
+  color: var(--blue);
+}
